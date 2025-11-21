@@ -1,0 +1,39 @@
+# --- Project Specific Indices ---
+index/
+
+# 排除 Python 编译/环境文件
+#####################################
+# 虚拟环境目录
+.venv/
+env/
+venv/
+# 编译后的文件
+__pycache__/
+*.pyc
+# IDE或调试文件
+.vscode/
+.idea/
+.ipynb_checkpoints/
+.mypy_cache/
+.pytest_cache/
+
+# Streamlit 缓存与配置 (Web UI)
+#####################################
+.streamlit/
+# Streamlit 缓存文件
+cache/
+logs/
+
+# 数据/结果文件
+#####################################
+# 排除 .pkl 索引文件 (如果索引较大，建议排除并通过云链接分享)
+# *.pkl 
+# 排除模型权重文件 (如果代码将权重下载到本地，这里可以排除)
+*.pt
+*.bin
+*.safetensors
+
+# OS Files
+.DS_Store
+Thumbs.db
+/scripts/index.html
