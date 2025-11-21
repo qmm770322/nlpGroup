@@ -18,10 +18,6 @@ OUT_PATH = os.path.join(os.path.dirname(__file__), "..", "test_predict.jsonl")
 
 TOP_K = 10
 
-
-
-
-
 def generate_predictions():
     print("Loading everything... (LLM, embeddings, index)")
     load_llm()
