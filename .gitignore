@@ -36,4 +36,4 @@ logs/
 # OS Files
 .DS_Store
 Thumbs.db
-/scripts/index.html
+/code/index.html

@@ -11,7 +11,7 @@ It integrates a multi-channel **Hybrid Retrieval** pipeline (BM25, static embedd
 project-root
 ├── evaluate
 ├── index
-└── scripts
+└── code
     └── data
 ```
 ------------------------------------------------------------
@@ -55,7 +55,7 @@ This script processes HotpotQA data and creates:
 
 Run:
 ```bash
-python scripts/build_index.py
+python code/build_index.py
 ```
 Output will be stored under:
 ```bash
@@ -65,7 +65,7 @@ index/hybrid_indices.pkl
 ### Step 2 — Generate predictions
 Creates model predictions for evaluation:
 ```bash
-python scripts/generate_predictions.py
+python code/generate_predictions.py
 ```
 Output file:
 ```bash
@@ -75,7 +75,7 @@ test_predict.jsonl
 ### Step 3 — Launch the Web UI (Feature A & B Demo)
 Start the Streamlit interface:
 ```bash
-streamlit run scripts/web.py
+streamlit run code/web.py
 ```
 This demo includes:
 - Multi-hop QA  
